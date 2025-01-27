@@ -1,0 +1,81 @@
+# Clean Architecture + Craftmanship
+
+## Projet : Diapo resumant projet (mail)
+
+## Clean Architecture
+
+Clean Architecture est un modèle de conception logicielle qui vise à structurer les systèmes de façon à ce qu'ils soient indépendants des frameworks, des bases de données et des interfaces utilisateur. Les principaux points sont :
+
+- Séparation des préoccupations : Les règles métier sont isolées des détails de l'implémentation technique.
+- Indépendance des frameworks : Le code d'application ne dépend pas des bibliothèques ou des frameworks externes.
+- Testabilité : La structure facilite les tests unitaires en isolant les règles métier.
+- Indépendance de l'interface utilisateur : Les règles métier ne sont pas liées à une interface spécifique.
+- Indépendance de la base de données : Les règles métier peuvent fonctionner avec n'importe quelle base de données.
+
+
+La structure se compose de plusieurs couches :
+
+- Entités : Représentent les objets métier fondamentaux du système.
+- Cas d'utilisation : Définissent les actions que l'utilisateur peut effectuer.
+- Interfaces (ou gateways) : Abstraites, elles permettent de communiquer avec les couches externes sans dépendance directe.
+- Frameworks et drivers : Incluent les bases de données, les interfaces UI, etc.
+- Couche externe : Tout ce qui est hors du contrôle direct du code, comme les bases de données ou les services externes.
+
+
+L'objectif est d'avoir un code durable, maintenable et adaptable aux changements futurs.
+
+## Craftmanship
+
+Software Craftsmanship est une philosophie et un mouvement qui met l'accent sur l'excellence dans le développement logiciel. Les points clés sont :
+
+- Professionnalisme : Les développeurs sont encouragés à adopter une éthique professionnelle, avec un engagement envers la qualité du code.
+- Métier : Le développement logiciel est vu comme un métier artisanal, où la maîtrise des compétences techniques est cruciale.
+- Pratiques : Promouvoir des pratiques comme le TDD (Test-Driven Development), le pair programming, le refactoring constant et le code propre.
+- Apprentissage continu : Il y a un accent mis sur l'amélioration constante des compétences et l'apprentissage à travers la communauté, les dojos de code, les guildes de craftmanship, etc.
+- Communauté : Encourager l'entraide, le partage des connaissances et la collaboration entre développeurs pour élever les standards de l'industrie.
+
+
+Le but est de transformer le développement logiciel en une discipline où l'artisanat, l'expertise et la passion pour le code bien fait priment.
+
+## Podcasts 
+
+### Pour : [Qu'est-ce que la qualité logicielle ?](https://podcast.ausha.co/ancyr-academy-podcast/qu-est-ce-que-la-qualite-logicielle)
+
+#### Tests et Pragmatisme :
+
+- Importance des tests unitaires et d'intégration pour faciliter le refactoring et assurer le bon fonctionnement du code après modifications.
+
+#### Clean Architecture :
+
+- Nécessité d'une architecture testable pour maintenir une bonne qualité logicielle et permettre des tests efficaces et rapides.
+
+#### Pratiques de Craftsmanship :
+
+- Valorisation du TDD (Test-Driven Development), du refactoring constant et du maintien d'un code propre pour produire un code de haute qualité et permettre des déploiements réguliers.
+
+### Contre : [Hands-On Podcast](https://www.youtube.com/watch?v=KJ5jafHDdGY)
+
+#### Complexité et Abstraction
+
+- Dans certains contextes (jeux vidéo, trading haute fréquence), les abstractions peuvent nuire à la performance.
+
+#### Tests et Pragmatisme
+
+- Écrire des tests peut être perçu comme une perte de temps pour des scripts ou des commandes simples.
+
+- La qualité logicielle doit répondre aux besoins et rester simple.
+
+#### Focus Excessif sur la Technique
+
+- Un code techniquement parfait peut ne pas répondre aux attentes des utilisateurs ou des objectifs commerciaux.
+
+#### Passion vs Raison
+
+- La passion pour certaines pratiques peut mener à des décisions irrationnelles.
+- Imposer des méthodologies spécifiques (Clean Architecture, TDD) dans tous les contextes peut être inapproprié.
+
+#### Cohésion de l'Équipe
+
+- La cohésion de l'équipe est cruciale.
+
+- Imposer des choix techniques sans consensus peut nuire à la motivation et à l'engagement, affectant la qualité du produit.
