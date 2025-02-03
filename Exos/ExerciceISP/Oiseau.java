@@ -1,4 +1,4 @@
-public class Oiseau implements Volant, Courant {
+public class Oiseau implements AnimalVolant {
 
 	public Oiseau() {
 		// TODO Auto-generated constructor stub

@@ -1,4 +1,4 @@
-public class Chat implements Courant {
+public class Chat implements Animal {
 
 	public Chat() {
 		// TODO Auto-generated constructor stub

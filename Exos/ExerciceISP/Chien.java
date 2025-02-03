@@ -1,4 +1,4 @@
-public class Chien implements Courant, Aboyant {
+public class Chien implements AnimalAboyant {
 
 	public Chien() {
 		// TODO Auto-generated constructor stub
